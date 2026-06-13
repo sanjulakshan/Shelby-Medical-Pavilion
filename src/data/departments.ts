@@ -1,0 +1,108 @@
+import type { Department } from '@/types';
+
+export const departments: Department[] = [
+  {
+    id: 'cardiology',
+    name: 'Cardiology',
+    icon: 'HeartPulse',
+    shortDesc: 'Advanced heart care, diagnostics, and preventive cardiology.',
+    overview: 'Our Cardiology department delivers comprehensive cardiac care using state-of-the-art diagnostic and interventional technology, led by internationally trained consultants.',
+    services: ['ECG & Echocardiography', 'Stress Testing', 'Holter Monitoring', 'Interventional Cardiology', 'Heart Failure Clinic'],
+    treatments: ['Coronary Angioplasty', 'Pacemaker Implantation', 'Hypertension Management', 'Cholesterol Management'],
+    faqs: [
+      { q: 'When should I see a cardiologist?', a: 'If you experience chest pain, palpitations, breathlessness, or have risk factors like high blood pressure, diabetes, or family history of heart disease.' },
+      { q: 'Do you offer preventive heart screenings?', a: 'Yes, our Executive Heart Health package includes a full cardiac risk assessment.' },
+    ],
+  },
+  {
+    id: 'pediatrics',
+    name: 'Pediatrics',
+    icon: 'Baby',
+    shortDesc: 'Compassionate care for newborns, children, and adolescents.',
+    overview: 'Our child-friendly Pediatrics department offers complete healthcare from birth through adolescence, focusing on growth, development, and preventive wellness.',
+    services: ['Well-Baby Clinics', 'Vaccinations', 'Growth Monitoring', 'Pediatric Nutrition', 'Allergy Care'],
+    treatments: ['Childhood Infections', 'Asthma Management', 'Developmental Assessments', 'Newborn Care'],
+    faqs: [
+      { q: 'Do you follow the UAE vaccination schedule?', a: 'Yes, we follow the official MOHAP/DHA immunization schedule and provide travel vaccines.' },
+      { q: 'Can I book same-day appointments for a sick child?', a: 'Yes, same-day and urgent pediatric slots are available daily.' },
+    ],
+  },
+  {
+    id: 'dermatology',
+    name: 'Dermatology',
+    icon: 'Sparkles',
+    shortDesc: 'Medical and cosmetic skin, hair, and nail care.',
+    overview: 'Our Dermatology team treats the full spectrum of skin conditions with special focus on concerns relevant to the UAE climate and lifestyle.',
+    services: ['Acne & Eczema Treatment', 'Skin Cancer Screening', 'Cosmetic Dermatology', 'Laser Treatments', 'Hair Loss Therapy'],
+    treatments: ['Pigmentation Correction', 'Allergy Patch Testing', 'Anti-Aging Procedures', 'Mole Removal'],
+    faqs: [
+      { q: 'How often should I get a skin check?', a: 'We recommend an annual skin screening, especially given high UV exposure in the UAE.' },
+      { q: 'Do you offer cosmetic treatments?', a: 'Yes, including laser, peels, and injectables performed by certified dermatologists.' },
+    ],
+  },
+  {
+    id: 'orthopedics',
+    name: 'Orthopedics',
+    icon: 'Bone',
+    shortDesc: 'Bone, joint, spine, and sports injury treatment.',
+    overview: 'Our Orthopedics department combines advanced surgical expertise with rehabilitation to restore mobility and treat musculoskeletal conditions.',
+    services: ['Joint Replacement', 'Sports Medicine', 'Spine Care', 'Fracture Management', 'Arthroscopy'],
+    treatments: ['Knee & Hip Replacement', 'ACL Reconstruction', 'Back Pain Management', 'Physiotherapy'],
+    faqs: [
+      { q: 'Do you treat sports injuries?', a: 'Yes, we have a dedicated sports medicine and rehabilitation program.' },
+      { q: 'Is physiotherapy available on-site?', a: 'Yes, our integrated physiotherapy unit supports pre- and post-surgical recovery.' },
+    ],
+  },
+  {
+    id: 'family-medicine',
+    name: 'Family Medicine',
+    icon: 'Users',
+    shortDesc: 'Primary care for every member of the family.',
+    overview: 'Family Medicine is the foundation of our patient-first philosophy — providing continuous, comprehensive care across all ages and conditions.',
+    services: ['General Consultations', 'Preventive Screenings', 'Chronic Disease Management', 'Health Check-Ups', 'Travel Medicine'],
+    treatments: ['Diabetes & Hypertension', 'Vaccinations', 'Minor Procedures', 'Lifestyle Counseling'],
+    faqs: [
+      { q: 'Can one doctor care for my whole family?', a: 'Yes, our family physicians provide continuity of care for all ages.' },
+      { q: 'Do you offer home health services?', a: 'Selected services and consultations can be arranged at home on request.' },
+    ],
+  },
+  {
+    id: 'gynecology',
+    name: "Women's Health",
+    icon: 'Flower2',
+    shortDesc: 'Comprehensive gynecology and obstetric care.',
+    overview: "Our Women's Health department offers compassionate, confidential care through every stage of life, with advanced diagnostics and minimally invasive treatments.",
+    services: ['Antenatal Care', 'Fertility Consultations', 'Menopause Management', 'Gynecologic Screening', 'Family Planning'],
+    treatments: ['Pregnancy Care', 'Laparoscopic Surgery', 'PCOS Management', 'Pap Smear & HPV Testing'],
+    faqs: [
+      { q: 'Do you provide pregnancy care?', a: 'Yes, we offer complete antenatal, delivery coordination, and postnatal care.' },
+      { q: 'Are female doctors available?', a: 'Yes, female consultants are available for your comfort and privacy.' },
+    ],
+  },
+  {
+    id: 'internal-medicine',
+    name: 'Internal Medicine',
+    icon: 'Stethoscope',
+    shortDesc: 'Expert diagnosis and management of adult health conditions.',
+    overview: 'Our Internal Medicine team provides comprehensive management of complex adult conditions, coordinating multi-specialty care when needed.',
+    services: ['Diabetes Management', 'Hypertension Care', 'Thyroid Disorders', 'Infectious Diseases', 'Preventive Screenings'],
+    treatments: ['Metabolic Syndrome', 'Anemia Management', 'Kidney Disease Monitoring', 'Respiratory Conditions'],
+    faqs: [
+      { q: 'What conditions does an internist treat?', a: 'Internal medicine covers a wide range of adult conditions including diabetes, heart disease, lung disorders, and more.' },
+      { q: 'Do I need a referral?', a: 'No referral is needed. You can book directly with our internists.' },
+    ],
+  },
+  {
+    id: 'ent',
+    name: 'ENT',
+    icon: 'Ear',
+    shortDesc: 'Ear, nose, and throat care for all ages.',
+    overview: 'Our ENT department provides expert management of ear, nose, throat, and head & neck conditions using the latest endoscopic and surgical techniques.',
+    services: ['Hearing Assessment', 'Sinus Treatment', 'Throat Care', 'Pediatric ENT', 'Balance Disorders'],
+    treatments: ['Endoscopic Sinus Surgery', 'Tonsillectomy', 'Ear Tube Placement', 'Nasal Polyp Removal'],
+    faqs: [
+      { q: 'Do you treat children with ENT problems?', a: 'Yes, we have extensive pediatric ENT experience.' },
+      { q: 'What are signs I need an ENT?', a: 'Persistent ear pain, recurrent sore throats, difficulty swallowing, nasal congestion, or hearing loss.' },
+    ],
+  },
+];

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shelbymedicalpavilion.ae/sitemap.xml
