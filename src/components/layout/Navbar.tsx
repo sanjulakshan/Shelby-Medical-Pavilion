@@ -52,7 +52,7 @@ export function Navbar() {
                 to={l.to}
                 end={l.to === '/'}
                 className={({ isActive }) =>
-                  clsx('rounded-full px-3 py-2 text-sm font-medium transition-colors', isActive ? 'text-teal' : 'text-ink hover:text-teal')
+                  clsx('rounded-full px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap', isActive ? 'text-teal' : 'text-ink hover:text-teal')
                 }
               >
                 {l.label}
