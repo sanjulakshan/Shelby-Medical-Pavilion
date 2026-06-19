@@ -35,7 +35,12 @@ export function Navbar() {
         Skip to content
       </a>
       <nav className="container-px flex h-20 items-center justify-between" aria-label="Main navigation">
-        <Link to="/" className="flex items-center gap-2" aria-label="Shelby Medical Pavilion home">
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          aria-label="Shelby Medical Pavilion home"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-navy to-teal text-white">
             <Plus size={22} />
           </span>
