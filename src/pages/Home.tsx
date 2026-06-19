@@ -329,12 +329,18 @@ export default function Home() {
             <h2 className="text-3xl font-extrabold md:text-4xl">Ready to Take Control of Your Health?</h2>
             <p className="mt-4 text-lg text-white/80">Book your appointment today and experience world-class healthcare in Dubai.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button to="/appointments" variant="primary" className="!bg-white !text-navy hover:!bg-white/90">
+              <a
+                href="/appointments"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-white px-6 py-3 text-sm font-semibold text-navy transition-all duration-300 hover:bg-transparent hover:text-white active:scale-95"
+              >
                 <Calendar size={18} /> Book Appointment
-              </Button>
-              <Button href="tel:+971506982268" variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
+              </a>
+              <a
+                href="tel:+971506982268"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-navy active:scale-95"
+              >
                 <Phone size={18} /> Call Us Now
-              </Button>
+              </a>
             </div>
           </Reveal>
         </div>

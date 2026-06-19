@@ -62,7 +62,7 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a href="tel:+971506982268" className="flex items-center gap-2 text-sm font-semibold text-navy">
+          <a href="tel:+971506982268" className="flex items-center gap-2 text-sm font-semibold text-navy whitespace-nowrap">
             <Phone size={16} /> +971 50 698 2268
           </a>
           <Button to="/appointments" variant="primary">Book Appointment</Button>
