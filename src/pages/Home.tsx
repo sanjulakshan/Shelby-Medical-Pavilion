@@ -46,9 +46,24 @@ export default function Home() {
               Compassionate Care. Advanced Medicine. Exceptional Outcomes. Dubai's modern multi-specialty medical center built around you.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button to="/appointments" variant="primary"><Calendar size={18} /> Book Appointment</Button>
-              <Button to="/doctors" variant="outline" className="border-white text-white hover:bg-white hover:text-navy"><UserSearch size={18} /> Find a Doctor</Button>
-              <Button href="tel:998" variant="emergency"><Ambulance size={18} /> Emergency: 998</Button>
+              <Link
+                to="/appointments"
+                className="inline-flex items-center gap-2 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-300 hover:bg-white hover:text-teal active:scale-95"
+              >
+                <Calendar size={18} /> Book Appointment
+              </Link>
+              <Link
+                to="/doctors"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-navy active:scale-95"
+              >
+                <UserSearch size={18} /> Find a Doctor
+              </Link>
+              <a
+                href="tel:998"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-emerald active:scale-95"
+              >
+                <Ambulance size={18} /> Emergency: 998
+              </a>
             </div>
             <div className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-white/15 pt-6">
               <Stat value={50} suffix="+" label="Specialists" />
